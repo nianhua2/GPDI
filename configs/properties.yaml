@@ -1,0 +1,65 @@
+# excel区域
+excel:
+  # 文件名
+  file_name: futureloan.xlsx
+  # 工作簿名
+  sheet_name: register
+
+# msf区域
+msg:
+  # 指定回写实际结果列
+  column_actual: 7
+  # 指定回写result的列
+  column: 8
+  # 用例不通过，回写结果
+  value_fail: 未通过
+  # 用例通过，回写结果
+  value_pass: 通过
+
+# log区域
+log:
+  # 日志收集器名
+  name_collector: my_log
+  # 收集器的级别
+  level_collector: DEBUG
+  # 日志输出格式
+  formater: "%(asctime)s - [%(filename)s-->line:%(lineno)d] - %(levelname)s: %(message)s"
+  # 输出到控制台级别
+  level_control: ERROR
+  # 输出到日志文件的级别
+  level_file: INFO
+  # 输出日志文件名
+  name_file: log.log
+
+# html区域
+html:
+  # 定义测试报告的名
+  html_report: MyTestReport_
+  # 测试报告的标题
+  title: 接口测试报告
+  # 测试报告的描述
+  description: excle文件写入 和ddt的使用作业
+  # 测试作者
+  tester: 年华
+
+# mysql区域
+mysql:
+  host: 'api.lemonban.com'
+  user: 'future'
+  password: '123456'
+  db: 'futureloan'
+  select_member: "select * from member t where t.mobile_phone= %s;"
+  select_max_member_id: "select max(id)  from member;"
+  select_max_loan_id: "select max(id)  from loan;"
+
+# 接口公共部分
+api:
+  url: "http://api.lemonban.com/futureloan"
+  headers:  {"X-Lemonban-Media-Type": "lemonban.v2"}
+
+
+
+
+
+
+

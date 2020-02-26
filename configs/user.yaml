@@ -1,0 +1,21 @@
+borrower:
+  id: 1453
+  leave_amount: 0
+  mobile_phone: '13805473698'
+  pwd: '12345678'
+  reg_name: 借款人
+  type: 1
+investor:
+  id: 1454
+  leave_amount: 0
+  mobile_phone: '13886973012'
+  pwd: '12345678'
+  reg_name: 投资人
+  type: 1
+admin:
+  id: 1455
+  leave_amount: 0
+  mobile_phone: '13875210983'
+  pwd: '12345678'
+  reg_name: 管理人
+  type: 0
